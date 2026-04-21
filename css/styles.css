@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    --background-color: rgb(30, 30, 35);
+
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+html {
+    background-color: var(--background-color);
+}
+
+header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-icon {
+    display: flex;
+    margin: 1%;
+}
+
+.title {
+    margin: 0px 20px;
+    color: white;
+}
+
+.account {
+    transition: color 0.5s, box-shadow 0.5s, transform 0.5s;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+    gap: 15px;
+    cursor: pointer;
+    margin: 1%;
+}
+
+.account a {
+    text-decoration: none;
+    color: inherit;
+    line-height: 120%;
+}
+
+.account-options {
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    border-left: solid 1px gray;
+}
+
+.account:hover {
+    background: linear-gradient(45deg, purple, red);
+    color: white;
+    box-shadow: 0px 0px 100px purple;
+    transform: scale(1.1);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.generator {
+    color: black;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+
+    padding: 40px 70px;
+    margin: 10px;
+
+    border-radius: 20px;
+
+    text-align: center;
+    align-items: center;
+    font-size: 18px;
+
+    box-shadow: 15px 15px 15px black;
+}
+
+.field {
+    text-align: left;
+}
+
+.generator .field input {
+    outline: none;
+    background-color: white;
+    border: 0px;
+    border-bottom: 1px solid gray;
+    text-align: center;
+    font-size: 20px;
+    width: 45vh;
+}
+
+.generator button {
+    transition: 0.5s;
+    font-size: 30px;
+    color: white;
+    background: linear-gradient(45deg, purple, red);
+    width: 20vh;
+    border-radius: 30px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.generator button:hover {
+    transform: scale(1.1);
+}
+
+.generator button:active {
+    transform: scale(0.9);
+}
